@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tech</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="RememberMe">Remember me</string>
+    <string name="tbSpareParts">Spare Parts Catalog</string>
+    <string name="Search">Search</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="hello">Hello World, CaptureSignatureActivity!</string>
+    <string name="external_dir">GetSignature</string>
+</resources>
