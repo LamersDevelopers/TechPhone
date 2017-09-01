@@ -131,49 +131,74 @@
         android:inputType="textPersonName"
         android:gravity="center_horizontal"/>
 
-        <TextView
-            android:id="@+id/endCall"
-            android:layout_width="match_parent"
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittextstyle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/endCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish work: "
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupIsEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/yesEndRadioButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Finish work: "
-            android:gravity="center_horizontal"
-            android:layout_marginTop="15dp"/>
+            android:text="@string/yes" />
 
-        <RadioGroup
-            android:id="@+id/radioGroupIsEnd"
-            android:layout_width="match_parent"
+        <RadioButton
+            android:id="@+id/noEndRadioButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:text="@string/no" />
 
-            <RadioButton
-                android:id="@+id/yesEndRadioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/yes" />
+    </RadioGroup>
 
-            <RadioButton
-                android:id="@+id/noEndRadioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/no" />
+</LinearLayout>
 
-        </RadioGroup>
 
      <EditText
          android:id="@+id/workDescription"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:minLines="5"
-         android:hint="Work Description"/>
-
-        <TextView
-            android:id="@+id/parts"
+         android:hint="Work Description"
+         android:ellipsize="start"
+         android:gravity="center_horizontal"
+         android:background="@drawable/edittextstyle"
+         android:layout_marginTop="15dp"/>
+         />
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Parts: "
-            android:gravity="center_horizontal"
-            android:layout_marginTop="15dp"/>
+            android:background="@drawable/edittextstyle"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/parts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parts: "
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+
 
         <TextView
             android:id="@+id/recomendationTitle"
@@ -187,7 +212,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines="5"
-            android:hint="Recomendation"/>
+            android:hint="Recomendation"
+            android:gravity="center_horizontal"
+            android:background="@drawable/edittextstyle"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -197,15 +224,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:id="@+id/startWorkTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Start Work: "
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="15dp"/>
+                    android:gravity="center_horizontal"/>
                 <TextClock
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
